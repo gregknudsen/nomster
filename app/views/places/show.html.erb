@@ -23,7 +23,7 @@
 		</script>
 
 		<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGXlojgwzRzfG1l2Atn3qp_FISQ3-s9Ds&callback=initMap">
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY8HuUdekUgRTdzpnV9CtzWLzh9q_zdZc&callback=initMap">
 	    </script>
 
 	  <div id="map"></div>
@@ -75,7 +75,7 @@
 		<% @place.photos.each do |photo| %>
 			<div class="col-12 col-sm-6">
 				<blockquote class="photo-display">
-					<%= image_tag photo.picture, class: 'show-image-size' %>
+					<%= image_tag photo.picture.to_s, class: 'show-image-size' %>
 					<p><% if photo.caption.present? %>
 						<%= photo.caption %></p>
 					<% end %>
